@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>990</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>微软雅黑</family>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::TabFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>0</number>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>1#</string>
+    </property>
+    <widget class="QPushButton" name="test_button_0">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="group_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_0">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>231</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="qcode_0">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="tabletTracking">
+      <bool>false</bool>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>25</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_0">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>140</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>2#</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>0</y>
+       <width>271</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>1#</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开启检测</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>251</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>54</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>检测结果：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>260</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>000000000000000</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="group_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_1">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_1">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>140</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>3#</string>
+    </property>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="group_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_2">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_2">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>140</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>4#</string>
+    </property>
+    <widget class="QGroupBox" name="group_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_3">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_3">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_8">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>140</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>5#</string>
+    </property>
+    <widget class="QGroupBox" name="group_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_4">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>20</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_4">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>60</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_14">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>550</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>8#</string>
+    </property>
+    <widget class="QLabel" name="label_54">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="test_button_7">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="group_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="qcode_7">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_9">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>550</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>10#</string>
+    </property>
+    <widget class="QLabel" name="label_46">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="group_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_9">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_9">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>550</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>6#</string>
+    </property>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="test_button_5">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="group_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="qcode_5">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_11">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>550</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>7#</string>
+    </property>
+    <widget class="QGroupBox" name="groupBox_13">
+     <property name="geometry">
+      <rect>
+       <x>290</x>
+       <y>0</y>
+       <width>271</width>
+       <height>301</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>1#</string>
+     </property>
+     <widget class="QPushButton" name="pushButton_17">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开启检测</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView_17">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>251</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>54</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>检测结果：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_60">
+      <property name="geometry">
+       <rect>
+        <x>73</x>
+        <y>260</y>
+        <width>181</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>000000000000000</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="group_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_6">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_6">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_6">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_10">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>550</y>
+      <width>271</width>
+      <height>400</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>9#</string>
+    </property>
+    <widget class="QGroupBox" name="group_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>文件传输</string>
+     </property>
+     <widget class="QProgressBar" name="progressBar_0_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>24</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="test_button_8">
+     <property name="geometry">
+      <rect>
+       <x>170</x>
+       <y>30</y>
+       <width>90</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>开启检测</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>54</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>条码：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="qcode_8">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="maxLength">
+      <number>12</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_res_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>串口COM1打开成功</string>
+     </property>
+    </widget>
+    <widget class="QTextBrowser" name="textBrowser_0_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1480</x>
+      <y>30</y>
+      <width>411</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>参数设置</string>
+    </property>
+    <widget class="QLabel" name="label_67">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>制令单号：</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="config_0">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>39</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_19">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>340</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>保存设置</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_17">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>371</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>产测选项</string>
+     </property>
+     <widget class="QCheckBox" name="toption_0">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>版本号验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_1">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>30</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PIN电压验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>通讯验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_3">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>频偏验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>过零验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>70</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>功耗验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>110</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>停电上报验证</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="toption_7">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>110</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>读写ID验证</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_20">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>340</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>退出保存</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_option_1">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>90</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>烧录</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="checkBox_option_2">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>90</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>产测</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_15">
+    <property name="geometry">
+     <rect>
+      <x>1480</x>
+      <y>430</y>
+      <width>411</width>
+      <height>521</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>运行日志</string>
+    </property>
+    <widget class="QTextBrowser" name="textBrowser">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>391</width>
+       <height>491</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_12">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>29</y>
+      <width>1431</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>文件/统计</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>30</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>已检测：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>123456</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#32CD32</string>
+     </property>
+     <property name="text">
+      <string>PASS：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>123455</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>30</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>微软雅黑</family>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#FF0000</string>
+     </property>
+     <property name="text">
+      <string>NG:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>370</x>
+       <y>30</y>
+       <width>54</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_16">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>10</y>
+       <width>611</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>bin文件</string>
+     </property>
+     <widget class="QLabel" name="bin_lab">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>411</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bin_button">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>22</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>选择文件</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>qcode_0</tabstop>
+  <tabstop>qcode_1</tabstop>
+  <tabstop>qcode_2</tabstop>
+  <tabstop>qcode_3</tabstop>
+  <tabstop>qcode_4</tabstop>
+  <tabstop>qcode_5</tabstop>
+  <tabstop>qcode_6</tabstop>
+  <tabstop>qcode_7</tabstop>
+  <tabstop>qcode_8</tabstop>
+  <tabstop>qcode_9</tabstop>
+  <tabstop>textBrowser_0_2</tabstop>
+  <tabstop>test_button_3</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>textBrowser_0_3</tabstop>
+  <tabstop>test_button_4</tabstop>
+  <tabstop>listView_5</tabstop>
+  <tabstop>textBrowser_0_4</tabstop>
+  <tabstop>test_button_7</tabstop>
+  <tabstop>textBrowser_0_1</tabstop>
+  <tabstop>textBrowser_0_7</tabstop>
+  <tabstop>test_button_9</tabstop>
+  <tabstop>textBrowser_0_0</tabstop>
+  <tabstop>textBrowser_0_9</tabstop>
+  <tabstop>test_button_5</tabstop>
+  <tabstop>test_button_1</tabstop>
+  <tabstop>textBrowser_0_5</tabstop>
+  <tabstop>pushButton_17</tabstop>
+  <tabstop>listView_17</tabstop>
+  <tabstop>test_button_6</tabstop>
+  <tabstop>test_button_0</tabstop>
+  <tabstop>textBrowser_0_6</tabstop>
+  <tabstop>test_button_8</tabstop>
+  <tabstop>test_button_2</tabstop>
+  <tabstop>textBrowser_0_8</tabstop>
+  <tabstop>config_0</tabstop>
+  <tabstop>pushButton_19</tabstop>
+  <tabstop>toption_0</tabstop>
+  <tabstop>toption_1</tabstop>
+  <tabstop>toption_2</tabstop>
+  <tabstop>toption_3</tabstop>
+  <tabstop>toption_4</tabstop>
+  <tabstop>toption_5</tabstop>
+  <tabstop>toption_6</tabstop>
+  <tabstop>toption_7</tabstop>
+  <tabstop>pushButton_20</tabstop>
+  <tabstop>checkBox_option_1</tabstop>
+  <tabstop>checkBox_option_2</tabstop>
+  <tabstop>textBrowser</tabstop>
+  <tabstop>bin_button</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
